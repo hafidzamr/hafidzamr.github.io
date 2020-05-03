@@ -1,4 +1,6 @@
+import Link from "next/link";
 import DefaultLayout from "~/components/general/layout/default";
+
 import {
 	IoLogoInstagram,
 	IoLogoFacebook,
@@ -30,7 +32,7 @@ const socialMedia = [
 	}
 ];
 
-export default function Index() {
+export default function Index(): JSX.Element {
 	return (
 		<DefaultLayout header={false}>
 			<h4 className="title">Hello World!, I'm Hafidz Amrulloh</h4>
@@ -39,14 +41,9 @@ export default function Index() {
 				<h5>Social Media</h5>
 				<IconSocialMedia>
 					{socialMedia.map((socialAccount, id) => (
-						<a
-							key={id}
-							href={socialAccount.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{socialAccount.icons}
-						</a>
+						<Link href={socialAccount.url} key={id} prefetch={false}>
+							<a target="_blank">{socialAccount.icons}</a>
+						</Link>
 					))}
 				</IconSocialMedia>
 			</SocialMedia>
