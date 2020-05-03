@@ -3,15 +3,9 @@ import {
 	IoLogoInstagram,
 	IoLogoFacebook,
 	IoLogoLinkedin,
-	IoLogoTwitter,
 	IoLogoGithub
 } from "react-icons/io";
-import {
-	SocialMedia,
-	IconSocialMedia,
-	PortofolioSection,
-	Footer
-} from "./styles";
+import { SocialMedia, IconSocialMedia } from "./styles";
 
 const socialMedia = [
 	{
@@ -28,11 +22,6 @@ const socialMedia = [
 		type: "instagram",
 		url: "https://www.instagram.com/hafidzamr_/",
 		icons: <IoLogoInstagram />
-	},
-	{
-		type: "twitter",
-		url: "https://twitter.com/hafidzamr_/",
-		icons: <IoLogoTwitter />
 	},
 	{
 		type: "linkedin",
