@@ -1,0 +1,33 @@
+{
+	"name": "first-nextjs",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://hafidzamr.github.io/",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"predeploy": "yarn run build",
+		"deploy": "next build && next export && git add out/ && git commit -m \"Deploy master\" && git subtree push --prefix out origin master"
+	},
+	"dependencies": {
+		"@zeit/next-css": "^1.0.1",
+		"@zeit/next-sass": "^1.0.1",
+		"gh-pages": "^2.2.0",
+		"next": "9.3.6",
+		"next-compose-plugins": "^2.2.0",
+		"node-sass": "^4.14.0",
+		"normalize.css": "^8.0.1",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-icons": "^3.10.0",
+		"styled-components": "^5.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^13.13.4",
+		"@types/react": "^16.9.34",
+		"@types/styled-components": "^5.1.0",
+		"babel-plugin-styled-components": "^1.10.7",
+		"typescript": "^3.8.3"
+	}
+}
