@@ -9,7 +9,7 @@ import CVIcon from '../../assets/icon/cv-logo.png';
 const Home = () => {
   return (
     <Layout>
-      <div className='mt-32'>
+      <div className='mt-8 lg:mt-30'>
         <div className='introduction w-full lg:w-6/12'>
           <h1 className='text-2xl font-bold text-center lg:text-left'>
             Hi there 👋, I'm Hafidz
@@ -21,8 +21,8 @@ const Home = () => {
 
         <div className='about mt-20 text-center mx-auto  lg:w-6/12 '>
           <h1 className='text-2xl font-bold'>About Me</h1>
-          <p className='pt-6 text-justify'>
-            Im Software Engineer - Frontend JavaScript Developer 🚀 from
+          <p className='pt-6 text-center lg:text-justify'>
+            Im Software Engineer - Frontend 🚀 from
             Indonesia. Always working on some project or learning something new!
             Stacks I have worked with : React, Vue(NuxtJS)
           </p>
@@ -36,17 +36,32 @@ const Home = () => {
           <div className='icon pt-5 flex justify-center lg:justify-end'>
             <div className='px-1'>
               <a href='https://github.com/hafidzamr' target='_blank'>
-                <Image src={GithubIcon} width={33} height={33} />
+                <Image
+                  src={GithubIcon}
+                  width={33}
+                  height={33}
+                  alt='github icon'
+                />
               </a>
             </div>
             <div className='px-1'>
               <a href='https://www.linkedin.com/in/hafidzamr/' target='_blank'>
-                <Image src={LinkedinIcon} width={36} height={36} />
+                <Image
+                  src={LinkedinIcon}
+                  width={36}
+                  height={36}
+                  alt='linkedin icon'
+                />
               </a>
             </div>
             <div className='px-1'>
               <a href='https://www.instagram.com/hafidzamr_/' target='_blank'>
-                <Image src={InstagramIcon} width={35} height={35} />
+                <Image
+                  src={InstagramIcon}
+                  width={35}
+                  height={35}
+                  alt='instagram icon'
+                />
               </a>
             </div>
             <div className='px-1'>
@@ -54,7 +69,7 @@ const Home = () => {
                 href='https://drive.google.com/file/d/1bMlJ71CPDa44Z90Qcf8B49f1yB7_7Jb_/view?usp=sharing'
                 target='_blank'
               >
-                <Image src={CVIcon} width={35} height={35} />
+                <Image src={CVIcon} width={35} height={35} alt='cv icon' />
               </a>
             </div>
           </div>
