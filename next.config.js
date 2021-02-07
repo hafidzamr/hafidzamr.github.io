@@ -3,6 +3,6 @@ const withImages = require('next-images');
 const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = withPlugins([
-  withImages,
+  [withImages],
   { assetPrefix: !debug ? 'https://hafidzamr.github.io/' : '' }
 ]);
