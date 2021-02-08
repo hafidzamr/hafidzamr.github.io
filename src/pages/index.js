@@ -11,25 +11,25 @@ const Home = () => {
     <Layout>
       <div className='mt-8 lg:mt-30'>
         <div className='introduction w-full lg:w-6/12'>
-          <h1 className='text-2xl font-bold text-center lg:text-left'>
+          <h1 className='text-base md:text-2xl font-bold text-center lg:text-left'>
             Hi there 👋, I'm Hafidz
           </h1>
-          <p className='pt-6  text-center lg:text-justify'>
+          <p className='pt-6  text-center text-xs md:text-base lg:text-justify'>
             Im Software Engineer,
           </p>
         </div>
 
         <div className='about mt-20 text-center mx-auto  lg:w-6/12 '>
-          <h1 className='text-2xl font-bold'>About Me</h1>
-          <p className='pt-6 text-center lg:text-justify'>
-            Im Software Engineer - Frontend 🚀 from
-            Indonesia. Always working on some project or learning something new!
-            Stacks I have worked with : React, Vue(NuxtJS)
+          <h1 className='text-base md:text-2xl font-bold'>About Me</h1>
+          <p className='pt-6 text-center lg:text-justify text-xs md:text-base'>
+            Im Software Engineer - Frontend 🚀 from Indonesia. Always working on
+            some project or learning something new! Stacks I have worked with :
+            React, Vue(NuxtJS)
           </p>
         </div>
 
         <div className='about mt-20 text-right ml-auto w-full lg:w-6/12 '>
-          <h1 className='text-2xl text-center lg:text-right font-bold'>
+          <h1 className='text-base md:text-2xl text-center lg:text-right font-bold'>
             Contact Me
           </h1>
 
