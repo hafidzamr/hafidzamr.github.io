@@ -1,10 +1,10 @@
 import Layout from '../components/Layout';
 import Image from 'next/image';
 
-import GithubIcon from '../../assets/icon/github-logo.png';
-import InstagramIcon from '../../assets/icon/instagram-logo.png';
-import LinkedinIcon from '../../assets/icon/linkedin-logo.png';
-import CVIcon from '../../assets/icon/cv-logo.png';
+import GithubIcon from '../assets/icon/github-logo.png';
+import InstagramIcon from '../assets/icon/instagram-logo.png';
+import LinkedinIcon from '../assets/icon/linkedin-logo.png';
+import CVIcon from '../assets/icon/cv-logo.png';
 
 const Home = () => {
   return (
@@ -35,7 +35,11 @@ const Home = () => {
 
           <div className='icon pt-5 flex justify-center lg:justify-end'>
             <div className='px-1'>
-              <a href='https://github.com/hafidzamr' target='_blank'>
+              <a
+                href='https://github.com/hafidzamr'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <Image
                   src={GithubIcon}
                   width={33}
@@ -45,7 +49,11 @@ const Home = () => {
               </a>
             </div>
             <div className='px-1'>
-              <a href='https://www.linkedin.com/in/hafidzamr/' target='_blank'>
+              <a
+                href='https://www.linkedin.com/in/hafidzamr/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <Image
                   src={LinkedinIcon}
                   width={36}
@@ -55,7 +63,11 @@ const Home = () => {
               </a>
             </div>
             <div className='px-1'>
-              <a href='https://www.instagram.com/hafidzamr_/' target='_blank'>
+              <a
+                href='https://www.instagram.com/hafidzamr_/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <Image
                   src={InstagramIcon}
                   width={35}
@@ -68,6 +80,7 @@ const Home = () => {
               <a
                 href='https://drive.google.com/file/d/1bMlJ71CPDa44Z90Qcf8B49f1yB7_7Jb_/view?usp=sharing'
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 <Image src={CVIcon} width={35} height={35} alt='cv icon' />
               </a>
