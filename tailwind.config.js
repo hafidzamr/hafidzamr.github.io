@@ -1,17 +1,18 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  purge: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}'
-  ],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Hachi Maru Pop', 'sans-serif']
+      sans: ['Montserrat', ...fontFamily.sans, ...fontFamily.mono]
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      textColor: ['visited']
+    }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 };
