@@ -3,5 +3,5 @@
 import MovieList from "../../MovieList.json";
 
 export default (req, res) => {
-  res.status(200).json(MovieList);
+  res.status(200).json(JSON.stringify(MovieList));
 };

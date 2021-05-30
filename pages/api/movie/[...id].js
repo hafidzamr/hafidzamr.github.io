@@ -5,5 +5,5 @@ import MovieList from "../../../MovieList.json";
 export default (req, res) => {
   const { id: requestID } = req.query;
   const result = MovieList.filter((movie) => movie.id === requestID.toString());
-  res.status(200).json(result[0]);
+  res.status(200).json(JSON.stringify(result[0]));
 };
